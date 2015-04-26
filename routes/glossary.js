@@ -10,7 +10,7 @@ router.get('/', function(req, res) {
     });
 });
 
-/* GET glossaryItemsList page. */
+/* GET SWA glossaryItemsList page. */
 router.get('/swa', function(req, res) {
     var db = req.db;
     var collection = db.get('glossarycollection');
@@ -19,32 +19,57 @@ router.get('/swa', function(req, res) {
     });
 });
 
-/* POST to Add Course */
+/* POST to glossary */
 router.post('/', function(req, res) {
 
     // Set our internal DB variable
     var db = req.db;
+
+    var courseId = req.body.course;
+    var glossaryItemId = req.body.id;
+    var glossaryItemName = req.body.name;
+    var glossaryItemLongname = req.body.longname;
+    var glossaryItemDescription = req.body.descr;
+    var glossaryItemSources = req.body.sources;
     
-    var courseId = req.body.id;
-    var courseName = req.body.name;
-    var coursePage = req.body.page;
-    
+    // otherwise delivers undefined because of dots in key (de.wikipedia.org)
+    glossaryItemSources = glossaryItemSources.toJson;
+
     // Set our collection
-    var collection = db.get('coursecollection');
+    var collection = db.get('glossarycollection');
 
     // Submit to the DB
     collection.insert({
-        "id" : courseId,
-        "name" : courseName,
-        "page" : coursePage
+        "course" : courseId,
+        "id" : glossaryItemId,
+        "name" : glossaryItemName,
+        "longname" : glossaryItemLongname,
+        "descr" : glossaryItemDescription,
+        "sources" : glossaryItemSources
     }, function (err, doc) {
         if (err) {
-            res.send("There was a problem adding a course to the database.");
-        }
-        else {
+            //res.send("There was a problem adding a glossaryItem to the database. Please stick to the documentation.");
+            
+            // for development!
+            res.status(err.status || 500);
+            res.render('error', {
+                message: err.message,
+                error: err
+            });
+        } else {
             res.status(201);
-            res.send("This JSON doc was created: \n\n"+ doc);
+            res.send("201. JSON doc was created: \n\n" + doc);
         }
+    });
+});
+
+/* DELETE to glossary. */
+router.delete('/:id', function(req, res) {
+    var db = req.db;
+    var glossaryItemId = req.params.id;
+    var glossaryItemToDelete = { "id" : glossaryItemId }
+    db.collection.remove(glossaryItemToDelete, function(err, result) {
+        res.send((result === 1) ? { msg: '' } : { msg:'error: ' + err });
     });
 });
 

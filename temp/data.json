@@ -1,0 +1,20 @@
+{
+    "id" : "SWA",
+    "name" : "Softwarearchitektur",
+    "page" : "./courses/swa"
+},
+{
+    "id" : "SWE",
+    "name" : "Software Engineering",
+    "page" : "./courses/swe"
+},
+{
+    "id" : "AVG",
+    "name" : "Automatisierung von Geschäftsprozessen",
+    "page" : "./courses/avg"
+}
+
+
+
+
+{"_id" : ObjectId("5202b481d2184d390cbf6eca"), "username" : "testuser1", "email" : "testuser1@testdomain.com"}

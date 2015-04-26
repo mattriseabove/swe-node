@@ -2,6 +2,8 @@ logs/*
 
 !.gitkeep
 
+data
+
 node_modules/
 
 bower_components/

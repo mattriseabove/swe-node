@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET courses listing. */
 router.get('/', function(req, res, next) {
-    res.render('courses', { title: 'todo: course page' });
-    res.send('respond with a resource');
+    res.send('TODO: respond with a resource');
 });
 
 module.exports = router;

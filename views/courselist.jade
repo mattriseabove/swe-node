@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1.
+        Course List
+    ul
+        each course, i in courselist
+            li
+                a(href="#{course.glossary}")= course.coursename 
+                
+                p #{course.longname}
+                

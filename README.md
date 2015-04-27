@@ -73,7 +73,7 @@ Beispiel: DELETE `/glossary/jaxrs` löscht den Glossareintrag zum Thema JAX-RS.
 Im entsprechenden lokalen Verzeichnis aufrufen:  
 `git clone https://github.com/mattriseabove/swe-node`  
 
-Darin das verzwichnis `/data` anlegen, für die mongodb Instanz.  
+Darin das Verzeichnis `/data/` anlegen, für die mongodb Instanz.  
 (da wir lokal entwickeln un die DB später übers Web aufgerufen wird, ist dieses Verzeichnis in der `.gitignore`.)  
 
 Initial dependencies aus der package.json installieren.  
@@ -85,7 +85,7 @@ die Datenbank starten.
 Im Client (z. B. mongo.exe oder Robomongo) mit `use swe-node` database erzeugen.  
 Collections namens `coursecollection` und `glossarycollection` anlegen.  
 
-Im Verzeichnis `jsonsamples` sind ein paar JSON docs zum Copy&Pasten.  
+Im Verzeichnis `/jsonsamples/` sind ein paar JSON docs zum Copy&Pasten.  
 
 
 ## Impressum

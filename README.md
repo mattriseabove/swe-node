@@ -68,6 +68,24 @@ unter `/gloassary/:id` lässt sich ein glossaryItem mit der gegebenen ID lösche
 Beispiel: PUT `/glossary/jaxrs` löscht den Glossareintrag zum Thema JAX-RS.  
 
 
+### Hinweise
+
+Im entsprechenden lokalen Verzeichnis aufrufen:
+`git clone https://github.com/mattriseabove/swe-node`
+
+Darin das verzwichnis `/data` anlegen, für die mongodb Instanz.
+(da wir lokal entwickeln un die DB später übers Web aufgerufen wird, ist dieses Verzeichnis in der `.gitignore`.)
+
+Initial dependencies aus der package.json installieren.
+`npm install` bzw. `npm update`
+
+mongodb lokal installieren und dort im bin mit 
+`mongod --dbpath C:\Repos\swe-node\data`
+die Datenbank starten.
+Im client (z. B. mongo.exe oder Robomongo) mit `use swe-node` database erzeugen.
+Collections namens `coursecollection` und `glossarycollection` anlegen.
+
+
 ## Impressum
 
 Alexander H.,  

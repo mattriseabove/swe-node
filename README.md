@@ -26,7 +26,7 @@ unter `/courses` lassen sich neue Kurse im Format
 anlegen.  
 
 
-### Glossare /glossary/[:id] (glossaryItemsList)
+### Glossar /glossary (glossaryItemsList)
 
 __GET__  
 unter `/glossary` lassen sich alle angelegte glossaryItems abrufen  
@@ -65,25 +65,27 @@ Beispiel: PUT `/glossary/jaxrs` ändert den Glossareintrag zum Thema JAX-RS.
 
 __DELETE__  
 unter `/gloassary/:id` lässt sich ein glossaryItem mit der gegebenen ID löschen.  
-Beispiel: PUT `/glossary/jaxrs` löscht den Glossareintrag zum Thema JAX-RS.  
+Beispiel: DELETE `/glossary/jaxrs` löscht den Glossareintrag zum Thema JAX-RS.  
 
 
 ### Hinweise
 
-Im entsprechenden lokalen Verzeichnis aufrufen:
-`git clone https://github.com/mattriseabove/swe-node`
+Im entsprechenden lokalen Verzeichnis aufrufen:  
+`git clone https://github.com/mattriseabove/swe-node`  
 
-Darin das verzwichnis `/data` anlegen, für die mongodb Instanz.
-(da wir lokal entwickeln un die DB später übers Web aufgerufen wird, ist dieses Verzeichnis in der `.gitignore`.)
+Darin das verzwichnis `/data` anlegen, für die mongodb Instanz.  
+(da wir lokal entwickeln un die DB später übers Web aufgerufen wird, ist dieses Verzeichnis in der `.gitignore`.)  
 
-Initial dependencies aus der package.json installieren.
+Initial dependencies aus der package.json installieren.  
 `npm install` bzw. `npm update`
 
-mongodb lokal installieren und dort im bin mit 
-`mongod --dbpath C:\Repos\swe-node\data`
-die Datenbank starten.
-Im client (z. B. mongo.exe oder Robomongo) mit `use swe-node` database erzeugen.
-Collections namens `coursecollection` und `glossarycollection` anlegen.
+mongodb lokal installieren und dort im bin mit  
+`mongod --dbpath C:\Repos\swe-node\data`  
+die Datenbank starten.  
+Im Client (z. B. mongo.exe oder Robomongo) mit `use swe-node` database erzeugen.  
+Collections namens `coursecollection` und `glossarycollection` anlegen.  
+
+Im Verzeichnis `jsonsamples` sind ein paar JSON docs zum Copy&Pasten.  
 
 
 ## Impressum

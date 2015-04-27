@@ -50,8 +50,7 @@ unter `/glossary` lassen sich neue Kurse im Format
         },
         {
             "2" : "https://jax-rs-spec.java.net/"
-        },
-        
+        }
     ]
 }
 ```

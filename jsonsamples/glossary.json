@@ -1,18 +1,22 @@
 {
-    "course" : "SWA", 
-    "id" : "jaxrs", 
-    "name" : "JAX-RS", 
-    "longname" : "Java API for RESTful Web Services", 
-    "descr" : "Bei der Java API for RESTful Web Services, kurz JAX-RS, handelt es sich um Spezifikation einer Programmierschnittstelle in Java...", 
-    "sources" : [
+    "course" : "SWA",
+    "id" : "jaxrs",
+    "name" : "JAX-RS",
+    "longname" : "Java API for RESTful Web Services",
+    "descr" : "Bei der Java API for RESTful Web Services, kurz JAX-RS, handelt es sich um ...",
+    "sources" : [ 
         {
-            "de.wikipedia.org" : "http://de.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services"}
+            "1" : "http://de.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services"
+        },
+        {
+            "2" : "https://jax-rs-spec.java.net/"
+        }
     ]
 }
 
 
-{"course" : "SWA", "id" : "jaxrs", "name" : "JAX-RS", "longname" : "Java API for RESTful Web Services", "descr" : "Bei der Java API for RESTful Web Services, kurz JAX-RS, handelt es sich um die Spezifikation einer Programmierschnittstelle (API) der Programmiersprache Java, die die Verwendung des Software-Architekturstils Representational State Transfer (REST) im Rahmen von Webservices ermöglicht und vereinheitlicht.", "sources" : [{"de.wikipedia.org" : "http://de.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services"}]}
+{"course" : "SWA", "id" : "jaxrs", "name" : "JAX-RS", "longname" : "Java API for RESTful Web Services", "descr" : "Bei der Java API for RESTful Web Services, kurz JAX-RS, handelt es sich um die Spezifikation einer Programmierschnittstelle (API) der Programmiersprache Java, die die Verwendung des Software-Architekturstils Representational State Transfer (REST) im Rahmen von Webservices ermöglicht und vereinheitlicht.", "sources" : [{"1" : "http://de.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services"},{"2" : "https://jax-rs-spec.java.net/"}]}
 
-{"course" : "SWA", "id" : "jaxb", "name" : "JAXB", "longname" : "Java Architecture for XML Binding", "descr" : "Java Architecture for XML Binding, kurz JAXB, ist eine Programmschnittstelle in Java, die es ermöglicht, Daten aus einer XML-Schema-Instanz heraus automatisch an Java-Klassen zu binden, und diese Java-Klassen aus einem XML-Schema heraus zu generieren. Diesen Vorgang nennt man XML-Datenbindung.", "sources" : [{"de.wikipedia.org" : "http://de.wikipedia.org/wiki/Java_Architecture_for_XML_Binding"}]}
+{"course" : "SWA", "id" : "jaxb", "name" : "JAXB", "longname" : "Java Architecture for XML Binding", "descr" : "Java Architecture for XML Binding, kurz JAXB, ist eine Programmschnittstelle in Java, die es ermöglicht, Daten aus einer XML-Schema-Instanz heraus automatisch an Java-Klassen zu binden, und diese Java-Klassen aus einem XML-Schema heraus zu generieren. Diesen Vorgang nennt man XML-Datenbindung.", "sources" : [{"1" : "http://de.wikipedia.org/wiki/Java_Architecture_for_XML_Binding"}]}
 
-{"course" : "SWE", "id" : "scrum", "name" : "SCRUM", "longname" : "", "descr" : "Scrum (englisch für Gedränge) ist ein Framework für das Vorgehen im Projekt- und Produktmanagement.", "sources" : [{"de.wikipedia.org" : "http://de.wikipedia.org/wiki/Scrum"}]}
+{"course" : "SWE", "id" : "scrum", "name" : "SCRUM", "longname" : "", "descr" : "Scrum (englisch für Gedränge) ist ein Framework für das Vorgehen im Projekt- und Produktmanagement.", "sources" : [{"1" : "http://de.wikipedia.org/wiki/Scrum"}]}

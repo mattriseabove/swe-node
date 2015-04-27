@@ -33,9 +33,6 @@ router.post('/', function(req, res) {
     var glossaryItemDescription = req.body.descr;
     var glossaryItemSources = req.body.sources;
 
-    // otherwise delivers undefined because of dots in key (de.wikipedia.org)
-    //glossaryItemSources = glossaryItemSources.toArray;
-
     // Set our collection
     var collection = db.get('glossarycollection');
 

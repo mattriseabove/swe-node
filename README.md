@@ -19,20 +19,20 @@ unter `/courses` lassen sich neue Kurse im Format
 {
     "id" : "SWA",
     "name" : "Softwarearchitektur",
-    "glossary" : "../glossary/swa"
+    "lectures" : [{"Mondays" : "09:50-11:20"}, {"Thursdays" : "09:50-11:20"}]
 }
 ```
 
-anlegen.
+anlegen.  
 
 
-### Glossare /glossary/:id (glossaryItemsList)
+### Glossare /glossary/[:id] (glossaryItemsList)
 
 __GET__  
 unter `/glossary` lassen sich alle angelegte glossaryItems abrufen  
 
 __GET__  
-unter `/glossary/:id`, z. B. `/glossary/swa/` lassen sich alle angelegte glossaryItems für einen bestimmten Kurs abrufen  
+unter `/glossary/:course`, z. B. `/glossary/swa/` lassen sich alle angelegte glossaryItems für einen bestimmten Kurs abrufen  
 
 __POST__  
 unter `/glossary` lassen sich neue Kurse im Format
@@ -46,13 +46,26 @@ unter `/glossary` lassen sich neue Kurse im Format
     "descr" : "Bei der Java API for RESTful Web Services, kurz JAX-RS, handelt es sich um ...",
     "sources" : [ 
         {
-            "de.wikipedia.org" : "http://de.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services"
-        }
+            "1" : "http://de.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services"
+        },
+        {
+            "2" : "https://jax-rs-spec.java.net/"
+        },
+        
     ]
 }
 ```
 
-anlegen.
+anlegen.  
+
+__PUT__  
+unter `/gloassary/:id` lässt sich ein glossaryItem mit der gegebenen ID und JSON body nach gleichem Muster wie unter **POST** modifizieren.  
+Beispiel: PUT `/glossary/jaxrs` ändert den Glossareintrag zum Thema JAX-RS.  
+
+
+__DELETE__  
+unter `/gloassary/:id` lässt sich ein glossaryItem mit der gegebenen ID löschen.  
+Beispiel: PUT `/glossary/jaxrs` löscht den Glossareintrag zum Thema JAX-RS.  
 
 
 ## Impressum

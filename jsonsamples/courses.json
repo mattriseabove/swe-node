@@ -1,0 +1,19 @@
+{
+    "id" : "SWA",
+    "name" : "Softwarearchitektur",
+    "lectures" : [{"Mondays" : "09:50-11:20"}, {"Thursdays" : "09:50-11:20"}]
+},
+{
+    "id" : "SWE",
+    "name" : "Software Engineering",
+    "lectures" : [{"Mondays" : "08:00-09:30"}, {"Tuesdays" : "08:00-09:30"}, {"Tuesdays" : "9:50-11:20"}]
+},
+{
+    "id" : "AVG",
+    "name" : "Automatisierung von Geschäftsprozessen",
+    "lectures" : [{"Tuesdays" : "11:30-13:00"}, {"Wednesdays" : "9:50-11:20"}]
+}
+
+{"id" : "SWA", "name" : "Softwarearchitektur", "lectures" : [{"Mondays" : "09:50-11:20"}, {"Thursdays" : "09:50-11:20"}]}
+{"id" : "SWE", "name" : "Software Engineering", "lectures" : [{"Mondays" : "08:00-09:30"}, {"Tuesdays" : "08:00-09:30"}, {"Tuesdays" : "9:50-11:20"}]}
+{"id" : "AVG", "name" : "Automatisierung von Geschäftsprozessen", "lectures" : [{"Tuesdays" : "11:30-13:00"}, {"Wednesdays" : "9:50-11:20"}]}

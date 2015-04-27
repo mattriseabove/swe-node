@@ -10,11 +10,12 @@ router.get('/', function(req, res) {
     });
 });
 
-/* GET SWA glossaryItemsList page. */
-router.get('/swa', function(req, res) {
+/* GET glossaryItemsList for :course page. */
+router.get('/:course', function(req, res) {
     var db = req.db;
     var collection = db.get('glossarycollection');
-    collection.find({ "course" : "SWA" },{},function(err, docs){
+    var courseToGet = req.params.course.toUpperCase();
+    collection.find({ "course" : courseToGet },{},function(err, docs){
         res.send(docs);
     });
 });
@@ -33,7 +34,7 @@ router.post('/', function(req, res) {
     var glossaryItemSources = req.body.sources;
 
     // otherwise delivers undefined because of dots in key (de.wikipedia.org)
-    glossaryItemSources = glossaryItemSources.toJson;
+    //glossaryItemSources = glossaryItemSources.toArray;
 
     // Set our collection
     var collection = db.get('glossarycollection');

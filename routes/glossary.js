@@ -73,8 +73,8 @@ router.put('/:id', function(req, res) {
     var glossaryItemDescription = req.body.descr;
     var glossaryItemSources = req.body.sources;
 
-    // otherwise delivers undefined because of dots in key (de.wikipedia.org)
-    glossaryItemSources = glossaryItemSources.toJson;
+    // sources are arrays:
+    glossaryItemSources = glossaryItemSources.toArray;
 
     var glossaryItemId = req.params.id;
     var glossaryItemToUpdate = { "id" : glossaryItemId };

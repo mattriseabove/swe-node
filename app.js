@@ -9,6 +9,8 @@ var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/swe-node');
+// alternatively:
+//var db = require('monk')('localhost:27017/swe-node');
 
 // require routes
 var routes = require('./routes/index');
@@ -16,6 +18,7 @@ var users = require('./routes/users');
 var courses = require('./routes/courses');
 var glossary = require('./routes/glossary');
 
+// initialize express de facto singleton
 var app = express();
 
 // view engine setup

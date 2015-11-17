@@ -6,6 +6,9 @@ SWE, Gruppe 19
 
 Was man hier alles machen kann...
 
+### MongoDB starten
+in mongodb ordner console starten und mit `mongod --dbpath C:\....\swe-node\data\` den Ort der Datenbank angeben
+
 
 ### Kurse /courses
 
